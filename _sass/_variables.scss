@@ -1,0 +1,66 @@
+// Light theme variables (default)
+$light-backgroundColor: #fcfcfc;
+$light-bodyColor: #444444;
+$light-primaryColor: #f2f2f2;
+$light-accentColor: #b0dbc0;
+$light-headerLinkColor: #000000;
+$light-headerLinkHoverColor: #333333;
+$light-cardBackground: #ffffff;
+$light-cardBorder: #eeeeee;
+$light-cardBorderHover: #cccccc;
+$light-searchBackground: rgba(255, 255, 255, 0.92);
+$light-searchTextColor: #444444;
+$light-disabledColor: #f5f5f5;
+$light-disabledTextColor: #999999;
+$light-borderColor: #eeeeee;
+$light-shadowColor: rgba(0, 0, 0, 0.02);
+$light-shadowColorHover: rgba(0, 0, 0, 0.04);
+$light-scrollbarTrack: #fcfcfc;
+$light-scrollbarThumb: #eeeeee;
+$light-scrollbarThumbHover: #dddddd;
+$light-tagBackground: #f2f2f2;
+
+// Dark theme variables
+$dark-backgroundColor: #0a0a0a;
+$dark-bodyColor: #e0e0e0;
+$dark-primaryColor: #121212;
+$dark-accentColor: #707070;
+$dark-headerLinkColor: #ffffff;
+$dark-headerLinkHoverColor: #cccccc;
+$dark-cardBackground: #0f0f0f;
+$dark-cardBorder: #252525;
+$dark-cardBorderHover: #444444;
+$dark-searchBackground: rgba(15, 15, 15, 0.95);
+$dark-searchTextColor: #e0e0e0;
+$dark-disabledColor: #252525;
+$dark-disabledTextColor: #777777;
+$dark-borderColor: #1a1a1a;
+$dark-shadowColor: rgba(0, 0, 0, 0.25);
+$dark-shadowColorHover: rgba(0, 0, 0, 0.35);
+$dark-scrollbarTrack: #0a0a0a;
+$dark-scrollbarThumb: #252525;
+$dark-scrollbarThumbHover: #333333;
+$dark-tagBackground: #1e1e1e;
+
+// Responsive breakpoints
+$breakpoint-mobile-max: 480px;
+$breakpoint-tablet-min: 481px;
+$breakpoint-tablet-max: 1100px;
+$breakpoint-desktop-min: 1101px;
+$breakpoint-mid-mobile-min: 481px;
+$breakpoint-mid-mobile-max: 767px;
+
+// Layout dimensions
+$post-min-width: 320px;    
+$post-card-padding: 1.2rem;
+$post-card-min-height: 120px;
+$post-grid-gap: 1.5rem;
+$post-max-width-desktop: 1400px;
+$post-columns-mobile: 1;
+$post-columns-tablet: 2;
+$post-columns-desktop: 3;
+
+// Site-wide width variables
+$site-content-min-width: 380px;
+$search-width-desktop: 300px;
+$search-max-width-mobile: 200px;

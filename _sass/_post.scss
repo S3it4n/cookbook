@@ -1,0 +1,48 @@
+article.post {
+  .post-header {
+    margin-bottom: 2rem;
+  }
+
+  .post-title {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .post-meta {
+    display: inline-block;
+    white-space: nowrap;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: var(--disabled-text-color);
+    
+    @media (max-width: $breakpoint-mobile-max) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  }
+
+  .post-author, .post-date {
+    display: inline-block;
+  }
+
+  .post-separator {
+    display: inline-block;
+    margin: 0 0.5rem;
+
+    @media (max-width: $breakpoint-mobile-max) {
+      display: none;
+    }
+  }
+
+  .post-tags {
+    margin-bottom: 1rem;
+  }
+
+  .post-content {
+    line-height: 1.6;
+  }
+}

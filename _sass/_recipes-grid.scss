@@ -1,0 +1,146 @@
+.post-list {
+  display: grid;
+  gap: $post-grid-gap;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0;
+  list-style: none;
+  overflow-y: auto;
+  max-height: none;
+  width: 100%;
+}
+
+.recipe-post {
+  background-color: var(--card-background);
+  border-radius: 0;
+  padding: $post-card-padding;
+  box-shadow: 0 3px 6px var(--shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease, display 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: $post-card-min-height;
+  height: 100%;
+  overflow: hidden;
+  border: 2px solid var(--card-border);
+
+  &:hover {
+    box-shadow: 0 0 15px var(--card-border-hover);
+    border-color: var(--card-border-hover);
+    border-width: 2px;
+  }
+
+  .post-title {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: var(--body-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+
+  .post-link {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    color: inherit;
+
+    &:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  .post-meta-container {
+    font-size: 0.9rem;
+    color: var(--disabled-text-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .post-meta {
+    font-size: 0.9rem;
+    color: var(--disabled-text-color);
+    display: inline-block;
+  }
+
+  .post-date-full {
+    display: inline;
+  }
+
+  .post-date-short {
+    display: none;
+  }
+
+  .post-author {
+    margin-right: 0.5rem;
+  }
+
+  .post-tags {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-top: 0.5rem;
+    white-space: nowrap;
+    max-width: 100%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile-max) {
+  .post-list {
+    grid-template-columns: repeat($post-columns-mobile, minmax($post-min-width, 1fr));
+    max-width: 100%;
+    margin-left: 0; 
+    margin-right: 0;
+  }
+  
+  .post-date-full {
+    display: none;
+  }
+  
+  .post-date-short {
+    display: inline;
+  }
+}
+
+@media (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet-max) { /* Tablet devices */
+  .post-list {
+    grid-template-columns: repeat($post-columns-tablet, minmax($post-min-width, 1fr));
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $breakpoint-desktop-min) {
+  .post-list {
+    grid-template-columns: repeat($post-columns-desktop, minmax($post-min-width, 1fr));
+    max-width: $post-max-width-desktop;
+    margin: 0 auto;
+  }
+  
+  .home {
+    max-width: $post-max-width-desktop;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: $breakpoint-mid-mobile-min) and (max-width: $breakpoint-mid-mobile-max) {
+    .post-list {
+        grid-template-columns: repeat($post-columns-mobile, minmax($post-min-width, 1fr));
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

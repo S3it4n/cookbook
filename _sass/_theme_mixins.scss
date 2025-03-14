@@ -1,0 +1,77 @@
+@import 'variables';
+
+@mixin generate-theme-css-vars {
+  --background-color: #{$light-backgroundColor};
+  --body-color: #{$light-bodyColor};
+  --primary-color: #{$light-primaryColor};
+  --accent-color: #{$light-accentColor};
+  --header-link-color: #{$light-headerLinkColor};
+  --header-link-hover-color: #{$light-headerLinkHoverColor};
+  --card-background: #{$light-cardBackground};
+  --card-border: #{$light-cardBorder};
+  --card-border-hover: #{$light-cardBorderHover};
+  --search-background: #{$light-searchBackground};
+  --search-text-color: #{$light-searchTextColor};
+  --disabled-color: #{$light-disabledColor};
+  --disabled-text-color: #{$light-disabledTextColor};
+  --border-color: #{$light-borderColor};
+  --shadow-color: #{$light-shadowColor};
+  --shadow-color-hover: #{$light-shadowColorHover};
+  --scrollbar-track: #{$light-scrollbarTrack};
+  --scrollbar-thumb: #{$light-scrollbarThumb};
+  --scrollbar-thumb-hover: #{$light-scrollbarThumbHover};
+  --tag-background: #{$light-tagBackground};
+  --scanline-color: rgba(0, 0, 0, 0.5);
+  --scanline-opacity: 0.15;
+}
+
+:root[data-theme="dark"] {
+  --background-color: #{$dark-backgroundColor};
+  --body-color: #{$dark-bodyColor};
+  --primary-color: #{$dark-primaryColor};
+  --accent-color: #{$dark-accentColor};
+  --header-link-color: #{$dark-headerLinkColor};
+  --header-link-hover-color: #{$dark-headerLinkHoverColor};
+  --card-background: #{$dark-cardBackground};
+  --card-border: #{$dark-cardBorder};
+  --card-border-hover: #{$dark-cardBorderHover};
+  --search-background: #{$dark-searchBackground};
+  --search-text-color: #{$dark-searchTextColor};
+  --disabled-color: #{$dark-disabledColor};
+  --disabled-text-color: #{$dark-disabledTextColor};
+  --border-color: #{$dark-borderColor};
+  --shadow-color: #{$dark-shadowColor};
+  --shadow-color-hover: #{$dark-shadowColorHover};
+  --scrollbar-track: #{$dark-scrollbarTrack};
+  --scrollbar-thumb: #{$dark-scrollbarThumb};
+  --scrollbar-thumb-hover: #{$dark-scrollbarThumbHover};
+  --tag-background: #{$dark-tagBackground};
+  --scanline-color: rgba(255, 255, 255, 0.5);
+  --scanline-opacity: 0.1;
+}
+
+:root[data-theme="light"] {
+  --background-color: #{$light-backgroundColor};
+  --body-color: #{$light-bodyColor};
+  --primary-color: #{$light-primaryColor};
+  --accent-color: #{$light-accentColor};
+  --header-link-color: #{$light-headerLinkColor};
+  --header-link-hover-color: #{$light-headerLinkHoverColor};
+  --header-link-hover-color: #{$light-headerLinkHoverColor};
+  --card-background: #{$light-cardBackground};
+  --card-border: #{$light-cardBorder};
+  --card-border-hover: #{$light-cardBorderHover};
+  --search-background: #{$light-searchBackground};
+  --search-text-color: #{$light-searchTextColor};
+  --disabled-color: #{$light-disabledColor};
+  --disabled-text-color: #{$light-disabledTextColor};
+  --border-color: #{$light-borderColor};
+  --shadow-color: #{$light-shadowColor};
+  --shadow-color-hover: #{$light-shadowColorHover};
+  --scrollbar-track: #{$light-scrollbarTrack};
+  --scrollbar-thumb: #{$light-scrollbarThumb};
+  --scrollbar-thumb-hover: #{$light-scrollbarThumbHover};
+  --tag-background: #{$light-tagBackground};
+  --scanline-color: rgba(0, 0, 0, 0.5);
+  --scanline-opacity: 0.15;
+}

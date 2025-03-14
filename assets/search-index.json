@@ -1,0 +1,12 @@
+---
+layout: none
+---
+[{%- for post in site.posts -%}{
+  "title":{{post.title|jsonify}},
+  "url":"{{post.url}}",
+  "date":"{{post.date|date:"%Y-%m-%d"}}",
+  "author":{{post.author|jsonify}},
+  "tags":{{post.tags|jsonify}},
+  "link":"{{post.link}}",
+  "ingredients":{{post.searchs|jsonify}}
+}{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]
