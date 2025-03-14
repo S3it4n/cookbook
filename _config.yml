@@ -1,5 +1,5 @@
-url: "https://cookbook.s3it4n.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
+url: "s3it4n.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/cookbook" # the subpath of your site, e.g. /blog
 title: "Recetario"
 description: "Libro de recetas de Instagram"
 
